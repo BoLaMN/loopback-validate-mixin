@@ -54,6 +54,9 @@ module.exports = function(Model, options) {
       },
       unique: function(validationConfig) {
         return Model.validatesUniquenessOf(validationName, validationConfig);
+      },
+      date: function(validationConfig) {
+        return Model.validatesDateOf(validationName, validationConfig);
       }
     };
   };

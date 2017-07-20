@@ -41,6 +41,8 @@ module.exports = (Model, options = {}) ->
       Model.validatesFormatOf validationName, validationConfig
     unique: (validationConfig) ->
       Model.validatesUniquenessOf validationName, validationConfig
+    date: (validationConfig) ->
+      Model.validatesDateOf validationName, validationConfig
 
   validationnFormatTypes =
     color: /^#[a-z0-9]{6}|#[a-z0-9]{3}|(?:rgb\(\s*(?:[+-]?\d+%?)\s*,\s*(?:[+-]?\d+%?)\s*,\s*(?:[+-]?\d+%?)\s*\))aqua|black|blue|fuchsia|gray|green|lime|maroon|navy|olive|orange|purple|red|silver|teal|white|yellow$/i
