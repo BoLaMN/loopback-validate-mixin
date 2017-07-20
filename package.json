@@ -1,6 +1,6 @@
 {
   "name": "loopback-validate-mixin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "loopback json model validations",
   "main": "dist/index.js",
   "scripts": {
